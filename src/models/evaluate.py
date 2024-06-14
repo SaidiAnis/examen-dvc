@@ -6,7 +6,7 @@ import pandas as pd
 
 def evaluate():
     print("Model Evaluation")
-    X_test = pd.read_csv("data/processed_data/X_test.csv", index_col = "date")
+    X_test = pd.read_csv("data/processed_data/X_test_scaled.csv", index_col = "date")
     y_test = pd.read_csv("data/processed_data/y_test.csv", index_col = "date")
 
     y_test = y_test.values.ravel()

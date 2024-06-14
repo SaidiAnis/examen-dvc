@@ -11,7 +11,7 @@ def grid_search():
     params = yaml.safe_load(open("src/params.yaml"))["grid_search"]
     
     # Load scaled features and labels
-    X_train = pd.read_csv("data/processed_data/X_train.csv", index_col = "date")
+    X_train = pd.read_csv("data/processed_data/X_train_scaled.csv", index_col = "date")
     y_train = pd.read_csv("data/processed_data/y_train.csv", index_col = "date")
 
     y_train = y_train.values.ravel()
