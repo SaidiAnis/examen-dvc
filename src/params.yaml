@@ -1,0 +1,13 @@
+data-split:
+  split: 0.2
+  seed: 42
+
+grid_search:
+  n_est: [250, 500]
+  m_depth: [3, 4]
+  lr: [0.1, 0.01]
+  min_split: [6]
+  min_leaf: [5]
+  cv: 5
+  scoring: 'neg_mean_squared_error'
+  
